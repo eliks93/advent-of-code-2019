@@ -9,9 +9,7 @@ const cycle = array => {
     let manipulate = initial.toString()
     if(manipulate.charAt(0) <= manipulate.charAt(1) && manipulate.charAt(1) <= manipulate.charAt(2) && manipulate.charAt(2) <= manipulate.charAt(3) && manipulate.charAt(3) <= manipulate.charAt(4) && manipulate.charAt(4) <= manipulate.charAt(5)) {
       if(manipulate.charAt(0) === manipulate.charAt(1) || manipulate.charAt(1) === manipulate.charAt(2) || manipulate.charAt(2) === manipulate.charAt(3) || manipulate.charAt(3) === manipulate.charAt(4) || manipulate.charAt(4) === manipulate.charAt(5)){
-        console.log(manipulate, "outer_______")
         if(noGroups(manipulate)) {
-          console.log(manipulate, "inner")
           count++
         }
           
@@ -46,13 +44,5 @@ const noGroups = string => {
   return false
   
 }
- // 666999
- //charAt(0) === 6
- //charAt(1) === 6
- //charAt(2) === 6 
- //charAt(3) === 9 *
- //charAt(4) === 9 *
- //charAt(5) === 9
  
-
 console.log(cycle(range))
